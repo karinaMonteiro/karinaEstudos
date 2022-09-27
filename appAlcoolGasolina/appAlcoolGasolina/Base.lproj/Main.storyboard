@@ -23,10 +23,18 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço Álcool " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNi-0O-nZN">
+                                <rect key="frame" x="30" y="170" width="152" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
+                            <constraint firstItem="TNi-0O-nZN" firstAttribute="top" secondItem="4Vf-ny-dvt" secondAttribute="bottom" constant="60" id="5P3-KU-R04"/>
+                            <constraint firstItem="TNi-0O-nZN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="OBl-I2-pdj"/>
                             <constraint firstItem="4Vf-ny-dvt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Piy-4I-cej"/>
                             <constraint firstItem="4Vf-ny-dvt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="bz6-Va-4pT"/>
                         </constraints>
