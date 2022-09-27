@@ -83,6 +83,10 @@
                             <constraint firstItem="mdD-iP-vPL" firstAttribute="top" secondItem="TNi-0O-nZN" secondAttribute="bottom" constant="60" id="zzm-D3-n6V"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="precoGasolinaTextField" destination="vI6-9v-2JO" id="FNU-Ea-Csh"/>
+                        <outlet property="precoalcoolTextField" destination="7dy-sP-mfg" id="rcm-3J-pBP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
