@@ -48,10 +48,18 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUr-5h-blf">
                                 <rect key="frame" x="152" y="390" width="86" height="35"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
-                                <color key="tintColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Calcular"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite os preço!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsa-If-zWw">
+                                <rect key="frame" x="30" y="475" width="330" height="33.666666666666686"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -60,6 +68,7 @@
                             <constraint firstItem="vI6-9v-2JO" firstAttribute="top" secondItem="7dy-sP-mfg" secondAttribute="bottom" constant="60" id="1xC-K1-b6W"/>
                             <constraint firstItem="TNi-0O-nZN" firstAttribute="top" secondItem="4Vf-ny-dvt" secondAttribute="bottom" constant="60" id="5P3-KU-R04"/>
                             <constraint firstItem="vI6-9v-2JO" firstAttribute="leading" secondItem="mdD-iP-vPL" secondAttribute="trailing" constant="30" id="8AC-bR-eFV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tsa-If-zWw" secondAttribute="trailing" constant="30" id="Hv5-fc-pzw"/>
                             <constraint firstItem="mdD-iP-vPL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="JnB-LT-JPf"/>
                             <constraint firstItem="7dy-sP-mfg" firstAttribute="leading" secondItem="TNi-0O-nZN" secondAttribute="trailing" constant="30" id="L3U-RL-LTS"/>
                             <constraint firstItem="TNi-0O-nZN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="OBl-I2-pdj"/>
@@ -67,6 +76,8 @@
                             <constraint firstItem="4Vf-ny-dvt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Piy-4I-cej"/>
                             <constraint firstItem="7dy-sP-mfg" firstAttribute="top" secondItem="4Vf-ny-dvt" secondAttribute="bottom" constant="60" id="RTh-vD-qdG"/>
                             <constraint firstItem="4Vf-ny-dvt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="bz6-Va-4pT"/>
+                            <constraint firstItem="tsa-If-zWw" firstAttribute="top" secondItem="rUr-5h-blf" secondAttribute="bottom" constant="50" id="daQ-Qj-zvu"/>
+                            <constraint firstItem="tsa-If-zWw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="pRx-uf-zRu"/>
                             <constraint firstItem="rUr-5h-blf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="syL-9e-vam"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vI6-9v-2JO" secondAttribute="trailing" constant="30" id="yjn-RW-G6r"/>
                             <constraint firstItem="mdD-iP-vPL" firstAttribute="top" secondItem="TNi-0O-nZN" secondAttribute="bottom" constant="60" id="zzm-D3-n6V"/>
@@ -79,6 +90,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
