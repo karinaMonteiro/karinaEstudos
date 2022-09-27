@@ -56,5 +56,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
 
+    @IBAction func tappedCalcular(_ sender: UIButton) {
+        let precoAlcool = Double(precoalcoolTextField.text!) ?? 0.0
+        let precoGasolina = Double(precoGasolinaTextField.text!) ?? 0.0
+        if precoAlcool == 0 || precoGasolina == 0 {
+            print("Valores digitados invalidos")
+        }else{
+            let porcetagemDoPrecoAlcool = precoAlcool * 100 / precoGasolina
+            
+            if porcetagemDoPrecoAlcool >= 70 {
+                print("Abasteça com Gasolina")
+            }else{
+                print("Abasteça com alcool")
+            }
+            
+        }
+    }
 }
 
