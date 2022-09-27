@@ -45,6 +45,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUr-5h-blf">
+                                <rect key="frame" x="152" y="390" width="86" height="35"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <color key="tintColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Calcular"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -56,9 +63,11 @@
                             <constraint firstItem="mdD-iP-vPL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="JnB-LT-JPf"/>
                             <constraint firstItem="7dy-sP-mfg" firstAttribute="leading" secondItem="TNi-0O-nZN" secondAttribute="trailing" constant="30" id="L3U-RL-LTS"/>
                             <constraint firstItem="TNi-0O-nZN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="OBl-I2-pdj"/>
+                            <constraint firstItem="rUr-5h-blf" firstAttribute="top" secondItem="mdD-iP-vPL" secondAttribute="bottom" constant="100" id="OF1-kk-clW"/>
                             <constraint firstItem="4Vf-ny-dvt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Piy-4I-cej"/>
                             <constraint firstItem="7dy-sP-mfg" firstAttribute="top" secondItem="4Vf-ny-dvt" secondAttribute="bottom" constant="60" id="RTh-vD-qdG"/>
                             <constraint firstItem="4Vf-ny-dvt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="bz6-Va-4pT"/>
+                            <constraint firstItem="rUr-5h-blf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="syL-9e-vam"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vI6-9v-2JO" secondAttribute="trailing" constant="30" id="yjn-RW-G6r"/>
                             <constraint firstItem="mdD-iP-vPL" firstAttribute="top" secondItem="TNi-0O-nZN" secondAttribute="bottom" constant="60" id="zzm-D3-n6V"/>
                         </constraints>
@@ -70,6 +79,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
