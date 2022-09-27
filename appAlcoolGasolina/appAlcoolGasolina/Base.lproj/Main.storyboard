@@ -84,6 +84,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="calcularButton" destination="rUr-5h-blf" id="FrL-HI-H1k"/>
                         <outlet property="precoGasolinaTextField" destination="vI6-9v-2JO" id="FNU-Ea-Csh"/>
                         <outlet property="precoalcoolTextField" destination="7dy-sP-mfg" id="rcm-3J-pBP"/>
                     </connections>
