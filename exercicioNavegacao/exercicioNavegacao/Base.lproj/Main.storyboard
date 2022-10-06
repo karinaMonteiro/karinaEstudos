@@ -17,12 +17,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GxP-Nf-gyD">
-                                <rect key="frame" x="20" y="658" width="350" height="35"/>
+                                <rect key="frame" x="20" y="725" width="350" height="35"/>
                                 <color key="backgroundColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <segue destination="l7u-b0-ah7" kind="show" id="lnJ-zL-cob"/>
+                                    <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eij-t5-xCk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -31,9 +31,12 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GxP-Nf-gyD" secondAttribute="trailing" constant="20" id="EN2-Zh-QcM"/>
                             <constraint firstItem="GxP-Nf-gyD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Wwu-TZ-hug"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GxP-Nf-gyD" secondAttribute="bottom" constant="117" id="ucr-1M-Cez"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GxP-Nf-gyD" secondAttribute="bottom" constant="50" id="ucr-1M-Cez"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="l7u-b0-ah7" kind="show" identifier="tela2" id="6Tq-s2-XbN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zP3-LP-pBD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="755" y="-28"/>
+            <point key="canvasLocation" x="983" y="-28"/>
         </scene>
     </scenes>
     <resources>
