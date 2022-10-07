@@ -15,6 +15,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func tappedButton(_ sender: UIButton) {
+        performSegue(withIdentifier:"Tela02", sender: nil)
+    }
 }
 
 
