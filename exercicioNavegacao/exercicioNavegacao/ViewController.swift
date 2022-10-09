@@ -17,9 +17,18 @@ class ViewController: UIViewController {
     
     
     @IBAction func tappedButton(_ sender: UIButton) {
-        performSegue(withIdentifier:"Tela02", sender: nil)
+        let vc = UIStoryboard(name: "Tela02VC", bundle: nil).instantiateViewController(withIdentifier: "Tela02VC") as? Tela02VC
+        // o pushViewController ele exibe a tela da controladora
+        navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
     }
+    
+    @IBAction func tappedGoScreen03Button(_ sender: UIButton) {
+    
+    }
+    
+    
 }
+
 
 
 
