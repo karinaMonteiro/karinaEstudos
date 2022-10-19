@@ -42,7 +42,15 @@ class ViewController: UIViewController {
     
     @IBAction func tappedButton(_ sender: Any) {
         
-        // exibindo NAVIGATION de maneira programatica
+        // * exibindo modal de maneira programatica
+              // let vc = UIStoryboard(name: "tela02", bundle: nil).instantiateViewController(withIdentifier: "tela02")
+               //as? tela02
+        //vc?.name = "\(nameTextField.text ?? "") \(lastNameTextField.text ?? "")"
+            //  * O present ele exibe a MODAL
+             //  present(vc ?? UIViewController(), animated: true)
+        
+                
+        // * exibindo NAVIGATION de maneira programatica
         let vcTela02 = UIStoryboard(name: "tela02", bundle: nil).instantiateViewController(withIdentifier: "tela02") as? tela02
         
         vcTela02?.name = "\(nameTextField.text ?? "") \(lastNameTextField.text ?? "")"
