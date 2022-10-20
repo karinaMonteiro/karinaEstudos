@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
     }
     
     @IBAction func tappedButton(_ sender: UIButton) {
@@ -49,4 +49,4 @@ class ViewController: UIViewController {
     
 }
 
-    
+

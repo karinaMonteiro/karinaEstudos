@@ -8,14 +8,14 @@
 import UIKit
 
 class tela03: UIViewController {
-
+    
     @IBOutlet weak var emailLabel: UILabel!
-   
+    
     
     var email: String?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         emailLabel.text = email
     }
     

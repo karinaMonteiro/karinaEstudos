@@ -14,10 +14,10 @@ class tela02: UIViewController {
     @IBOutlet weak var lastNameLabel: UILabel!
     
     var people:Pessoa?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         nameLabel.text = people?.name
         lastNameLabel.text = people?.lastname
         
