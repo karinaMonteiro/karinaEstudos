@@ -10,8 +10,18 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    var listImage2:[String] = ["car1","car2","car3","car4","car5","car6"]
-    var listImage1:[String] = ["moto1","moto2","moto3","moto4","moto5", "moto6"]
+    var vehiclelist: [Vehicle] = [
+        Vehicle(
+            title: "Motos Esportivas",
+            list: ["moto1", "moto2", "moto3", "moto4", "moto5", "moto6"
+            ]
+        ),
+        Vehicle(
+            title: "Carros Esportivos",
+            list: ["car1", "car2","car3","car4","car5","car6"
+            ]
+        )
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,20 +43,15 @@ extension ViewController: UITableViewDelegate{
 
 extension ViewController:UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return vehiclelist.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == 0 {
+      
             let cell = tableView.dequeueReusableCell(withIdentifier: "CarTableViewCell", for: indexPath) as? CarTableViewCell
-            cell?.setupCell(title: "Motos Esportivas", listImage: self.listImage1)
+        cell?.setupCell(data: vehiclelist[indexPath.row])
             return cell ?? UITableViewCell()
-            
-        } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "CarTableViewCell", for: indexPath) as? CarTableViewCell
-            cell?.setupCell(title: "Carros Esportivos", listImage: self.listImage2)
-            return cell ?? UITableViewCell()
-        }
+        
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 350

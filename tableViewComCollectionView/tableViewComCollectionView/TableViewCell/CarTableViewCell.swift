@@ -15,7 +15,7 @@ class CarTableViewCell: UITableViewCell {
     static func nib() -> UINib {
         return UINib(nibName: identifier, bundle: nil)
     }
-    var listImage:[String] = []
+    var data: [String] = []
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -32,9 +32,9 @@ class CarTableViewCell: UITableViewCell {
         }
     }
     
-    func setupCell(title:String,listImage:[String]) {
-        self.titleLabel.text = title
-        self.listImage = listImage
+    func setupCell(data:Vehicle) {
+        self.titleLabel.text = data.title
+        self.data = data.list
     }
 }
 
@@ -43,12 +43,12 @@ extension CarTableViewCell:UICollectionViewDelegate{
 
 extension CarTableViewCell:UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return listImage.count
+        return data.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CustomCollectionViewCell.identifier, for: indexPath) as? CustomCollectionViewCell
-        cell?.setupCell(nameImage: self.listImage[indexPath.row])
+        cell?.setupCell(nameImage: data[indexPath.row])
         return cell ?? UICollectionViewCell()
     }
     

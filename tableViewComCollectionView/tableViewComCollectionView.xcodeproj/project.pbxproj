@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C48FC403291C52880024BD06 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48FC402291C52880024BD06 /* Vehicle.swift */; };
 		C4D38F25291AC9B400D1D516 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D38F23291AC9B400D1D516 /* CustomCollectionViewCell.swift */; };
 		C4D38F26291AC9B400D1D516 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4D38F24291AC9B400D1D516 /* CustomCollectionViewCell.xib */; };
 		C4DC152C2919E5C600E87366 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DC152B2919E5C600E87366 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C48FC402291C52880024BD06 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		C4D38F23291AC9B400D1D516 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		C4D38F24291AC9B400D1D516 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		C4DC15282919E5C600E87366 /* tableViewComCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableViewComCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4AB0979291C517700AEBD31 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C48FC402291C52880024BD06 /* Vehicle.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		C4D38F22291AC93900D1D516 /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +83,7 @@
 		C4DC152A2919E5C600E87366 /* tableViewComCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				C4AB0979291C517700AEBD31 /* model */,
 				C4D38F22291AC93900D1D516 /* CollectionViewCell */,
 				C4DC153F2919E71400E87366 /* TableViewCell */,
 				C4DC152B2919E5C600E87366 /* AppDelegate.swift */,
@@ -168,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C48FC403291C52880024BD06 /* Vehicle.swift in Sources */,
 				C4DC15302919E5C600E87366 /* ViewController.swift in Sources */,
 				C4D38F25291AC9B400D1D516 /* CustomCollectionViewCell.swift in Sources */,
 				C4DC152C2919E5C600E87366 /* AppDelegate.swift in Sources */,
