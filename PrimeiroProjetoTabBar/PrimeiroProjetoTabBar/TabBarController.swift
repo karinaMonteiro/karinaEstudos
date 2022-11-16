@@ -9,7 +9,7 @@ import UIKit
 
 class TabBarController: UITabBarController {
     var array:[String] = []
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configItems()
@@ -27,10 +27,10 @@ class TabBarController: UITabBarController {
         items[2].title = "Tela 03"
         items[2].image = UIImage(systemName: "phone.circle")
     }
-   func configTabBar() {
+    func configTabBar() {
         tabBar.layer.borderWidth = 0.5
         tabBar.layer.borderColor = UIColor.black.cgColor
-       tabBar.backgroundColor = .white
+        tabBar.backgroundColor = .white
     }
-
+    
 }

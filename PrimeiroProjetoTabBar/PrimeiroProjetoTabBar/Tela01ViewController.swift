@@ -8,7 +8,7 @@
 import UIKit
 
 class Tela01ViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var userImage: UIImageView!
@@ -17,7 +17,7 @@ class Tela01ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      configTableView()
+        configTableView()
     }
     func configTableView() {
         tableView.delegate = self
@@ -25,9 +25,9 @@ class Tela01ViewController: UIViewController {
         tableView.register(UserTableViewCell.nib(), forCellReuseIdentifier: UserTableViewCell.identifier)
     }
     @IBAction func EditarFotoButton(_ sender: UIButton) {
-    let pickerPhotoController = UIImagePickerController()
+        let pickerPhotoController = UIImagePickerController()
         pickerPhotoController.delegate = self
-     present(pickerPhotoController, animated: true)
+        present(pickerPhotoController, animated: true)
     }
     @IBAction func addUser(_ sender: UIButton) {
         let user: User = User(name:nameTextField.text ?? "" ,image:userImage.image ?? UIImage())
@@ -50,11 +50,10 @@ extension Tela01ViewController: UITableViewDataSource{
         
     }
     
-    
 }
 extension Tela01ViewController:UITableViewDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-       if let pickedImage = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerOriginalImage")] as? UIImage {
+        if let pickedImage = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerOriginalImage")] as? UIImage {
             userImage.image = pickedImage
         }
         picker.dismiss(animated: true)
