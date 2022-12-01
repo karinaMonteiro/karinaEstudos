@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HPA-AW-KC2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1488" y="606"/>
+            <point key="canvasLocation" x="-2383" y="666"/>
         </scene>
         <!--Tela01-->
         <scene sceneID="rIn-JA-zjZ">
@@ -126,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8if-4W-cNG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1611" y="-891"/>
+            <point key="canvasLocation" x="-3542" y="665"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="sb6-CB-eF9">
@@ -145,7 +145,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yrj-0q-KSr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1428" y="-141"/>
+            <point key="canvasLocation" x="-2382" y="-141"/>
         </scene>
         <!--Tela03-->
         <scene sceneID="tne-QT-ifu">
@@ -157,17 +157,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tela03" image="phone.circle" catalog="system" id="8RJ-7O-D2G"/>
+                    <tabBarItem key="tabBarItem" title="Tela03" image="person" catalog="system" id="8RJ-7O-D2G"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-409" y="-141"/>
+            <point key="canvasLocation" x="-1212" y="665"/>
         </scene>
     </scenes>
     <resources>
         <image name="camera" catalog="system" width="128" height="93"/>
+        <image name="person" catalog="system" width="128" height="121"/>
         <image name="person.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="phone.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

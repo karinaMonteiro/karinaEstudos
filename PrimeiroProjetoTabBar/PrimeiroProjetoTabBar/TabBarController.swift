@@ -31,6 +31,7 @@ class TabBarController: UITabBarController {
         tabBar.layer.borderWidth = 0.5
         tabBar.layer.borderColor = UIColor.black.cgColor
         tabBar.backgroundColor = .white
+       
     }
     
 }
