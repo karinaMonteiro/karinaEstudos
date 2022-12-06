@@ -28,19 +28,20 @@ class EmployeeTableViewCell: UITableViewCell {
     static func nib() -> UINib {
         return UINib(nibName: identifier, bundle: nil)
     }
-
+    var viewModel:EmployeeTableViewCellViewModel = EmployeeTableViewCellViewModel()
     override func awakeFromNib() {
         super.awakeFromNib()
-     
+        
     }
     
-    func setupCell(data: Employee){
+    func setupCell(data: Employee) {
+        viewModel.setEmployee(employee: data)
         self.userImageView.image = data.imageUser
-        self.nameLabel.text = "Nome: \(data.name)"
-        self.professionLabel.text = "Profissão: \(data.profession)"
-        self.salaryLabel.text = "Salário: \(data.salary)"
-        self.ageLabel.text = "Idade: \(String(data.age))"
-
+        self.nameLabel.text = viewModel.name
+        self.professionLabel.text = viewModel.profession
+        self.salaryLabel.text = viewModel.salary
+        self.ageLabel.text = viewModel.age
+        
         if data.isEnableHeart{
             self.heartButton.tintColor = .red
         }else{
